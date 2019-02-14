@@ -23,7 +23,7 @@
       <% hello_word = 'こんばんわ' %>
     <% end %>
 
-    <p><%= hello_word %><%= "、#{name}(#{age})さん" if name && age %></p>
+    <p><%= greeting(hello_word, name, age) %></p>
     <p>今は<%= time_japan.hour %>時です。</p>
   </body>
 </html>
